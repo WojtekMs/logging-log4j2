@@ -8,7 +8,9 @@ on:
 jobs:
   build:
     name: Build and analyze
-    runs-on: wojtekmat/builder
+    runs-on: ubuntu-latest
+    container:
+      image: wojtekmat/builder
     steps:
       - uses: actions/checkout@v2
         with:
