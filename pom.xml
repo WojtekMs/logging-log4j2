@@ -218,6 +218,8 @@
     <tag>log4j-2.17.2-rc1</tag>
   </scm>
   <properties>
+    <sonar.organization>wojtekms</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <!-- make sure to update these for each release! -->
     <log4jParentDir>${basedir}</log4jParentDir>
     <Log4jReleaseVersion>2.17.2</Log4jReleaseVersion>
