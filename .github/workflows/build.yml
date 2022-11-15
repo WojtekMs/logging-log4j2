@@ -2,7 +2,7 @@ name: SonarCloud
 on:
   push:
     branches:
-      - rel/2.17.2-patched
+      - rel/2.17.2-patched-builder
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
