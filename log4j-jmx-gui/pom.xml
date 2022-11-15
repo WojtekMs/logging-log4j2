@@ -211,19 +211,19 @@
       <activation>
         <activeByDefault>true</activeByDefault>
         <file>
-          <exists>${java.home}/../lib/jconsole.jar</exists>
+		<exists>/usr/lib/jvm/java-1.8.0/lib/jconsole.jar</exists>
         </file>
       </activation>
       <properties>
-        <toolsjar>${java.home}/../lib/jconsole.jar</toolsjar>
+        <toolsjar>/usr/lib/jvm/java-1.8.0/lib/jconsole.jar</toolsjar>
       </properties>
       <dependencies>
         <dependency>
           <groupId>com.sun</groupId>
           <artifactId>jconsole</artifactId>
-          <version>1.6.0</version>
+          <version>${maven.compile.target}</version>
           <scope>system</scope>
-          <systemPath>${java.home}/../lib/jconsole.jar</systemPath>
+          <systemPath>/usr/lib/jvm/java-1.8.0/lib/jconsole.jar</systemPath>
           <optional>true</optional>
         </dependency>
       </dependencies>
@@ -240,7 +240,7 @@
         <dependency>
           <groupId>com.sun</groupId>
           <artifactId>jconsole</artifactId>
-          <version>1.6.0</version>
+          <version>${maven.compile.target}</version>
           <scope>system</scope>
           <systemPath>${java.home}/../Classes/jconsole.jar</systemPath>
           <optional>true</optional>
